@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Prototipo 1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Prototipo A</h1>
+    <div class="container">
+      <h1>¡Bienvenido!</h1>
+      <h2>¡No te pierdas lo nuevo!</h2>
+      <p>Descubre promociones exclusivas y actualizaciones semanales.</p>
+      <button id="openModal" class="btn-a">¡Quiero recibir novedades!</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Suscríbete al boletín</h2>
+        <p>Déjanos tu correo y te enviaremos lo mejor de nuestras novedades cada semana.</p>
+        <form id="formA">
+          <input type="email" placeholder="Correo electrónico" required />
+          <button type="submit" class="btn-a">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Mostrar modal
+      const modal = document.getElementById("modal");
+      const openModal = document.getElementById("openModal");
+      const closeModal = document.getElementById("closeModal");
+
+      openModal.onclick = () => {
+        modal.style.display = "block";
+      };
+
+      closeModal.onclick = () => {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      // Registro (puedes contar clics, envíos, etc.)
+      document.getElementById("formA").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Gracias por suscribirte (Versión A)");
+        modal.style.display = "none";
+        // Aquí podrías enviar datos o guardar en una hoja
+      });
+    </script>
+  </body>
+</html>
