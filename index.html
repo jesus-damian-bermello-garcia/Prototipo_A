@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Inicio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="contactos.html">Contactos</a>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contactos.html">Contactos</a>
+    </nav>
     <div class="container">
       <h1>¡Bienvenido!</h1>
       <h2>¡No te pierdas lo nuevo!</h2>
@@ -23,7 +23,10 @@
       <div class="modal-content">
         <span id="closeModal" class="close">&times;</span>
         <h2>Suscríbete al boletín</h2>
-        <p>Déjanos tu correo y te enviaremos lo mejor de nuestras novedades cada semana.</p>
+        <p>
+          Déjanos tu correo y te enviaremos lo mejor de nuestras novedades cada
+          semana.
+        </p>
         <form id="formA">
           <input type="email" placeholder="Correo electrónico" required />
           <button type="submit" class="btn-a">Enviar</button>
@@ -49,7 +52,7 @@
         if (event.target == modal) {
           modal.style.display = "none";
         }
-      }
+      };
     </script>
-</body>
+  </body>
 </html>
