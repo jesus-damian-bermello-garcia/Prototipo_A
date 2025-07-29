@@ -1,9 +1,9 @@
 body {
   font-family: "Segoe UI", sans-serif;
-  background: #f7f7f7;
+  background: #f2dbdb;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align:left;
 }
 
 .container {
@@ -71,4 +71,14 @@ body {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: blue;
 }
