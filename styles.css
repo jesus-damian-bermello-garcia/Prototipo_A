@@ -109,6 +109,8 @@ body {
 }
 
 nav {
+  position: sticky;
+  top: 0;
   margin-bottom: 20px;
   padding: 15px;
   display: flex;
